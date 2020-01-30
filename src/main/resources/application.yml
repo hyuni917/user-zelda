@@ -1,0 +1,22 @@
+#server:
+#  port: 9090
+#  #connection-timeout: 600000
+#
+#spring:
+#  main:
+#    allow-bean-definition-overriding: true
+#  application:
+#    name: user-zelda
+#  zipkin:
+#    service:
+#      name: user-zelda
+##  datasource:
+##    username:
+##    password:
+##    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#
+#  # devtool: https://jojoldu.tistory.com/48
+#  devtools:
+#    livereload:
+#      enabled: true
+#
