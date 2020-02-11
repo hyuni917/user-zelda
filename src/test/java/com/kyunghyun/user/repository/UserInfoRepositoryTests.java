@@ -15,7 +15,7 @@ public class UserInfoRepositoryTests {
 
     @Test
     public void testUserInfoRepository(){
-        UserInfo userInfo = UserInfo.builder().seq(1L).id("test").name("테스트").status("0").create_date(new Date()).update_date(new Date()).build();
+        UserInfo userInfo = UserInfo.builder().id("test").name("테스트").status("0").create_date(new Date()).update_date(new Date()).build();
         System.out.println(userInfo);
         userInfoRepository.save(userInfo);
         //List<UserInfo> userInfoList = userInfoRepository.findAll();

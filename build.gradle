@@ -13,6 +13,7 @@ apply plugin: 'war'
 group = 'com.kyunghyun'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
+targetCompatibility = '11'
 
 //bootJar 비활성화시
 bootJar.enabled = false
