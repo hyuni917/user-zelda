@@ -6,16 +6,17 @@ spring:
     name: user-zelda
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/USER?serverTimezone=UTC&characterEncoding=UTF-8
-    username: zelda
-    password: zelda123!
+    url: jdbc:mysql://localhost:3306/user_zelda?serverTimezone=UTC&characterEncoding=UTF-8
+    username: ENC(xatt/xbf5ohUTNnpnGxxiQ==)
+    password: ENC(Hg6tzU1uYkC5KlUumpLVBigXYOkM9x00)
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     open-in-view: false
     show-sql: true
     hibernate:
       format_sql: true
-      ddl-auto: validate
+      ddl-auto: create
   zipkin:
     service:
       name: user-zelda
+
