@@ -1,10 +1,10 @@
 package com.kyunghyun.user.repository;
 
-import com.kyunghyun.user.entity.UserInfo;
+import com.kyunghyun.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserInfoRepository extends JpaRepository<UserInfo, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
 }
