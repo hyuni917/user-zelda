@@ -50,6 +50,7 @@ dependencies {
     //implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.cloud:spring-cloud-starter'
     implementation group: 'com.github.ulisesbocchio', name: 'jasypt-spring-boot-starter', version: '3.0.2'
+    implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.3.6'
 
     //implementation 'org.springframework.cloud:spring-cloud-starter-config'
     //implementation 'org.springframework.cloud:spring-cloud-starter-zipkin'
