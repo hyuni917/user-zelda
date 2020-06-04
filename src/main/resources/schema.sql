@@ -22,7 +22,7 @@ create table `user` (
 -- user_changed_history
 drop table if exists `user_changed_history`;
 
-create table user_zelda.`user_changed_history` (
+create table `user_changed_history` (
   `user_no` bigint(20) not null comment '유저번호',
   `user_id` varchar(100) not null comment '유저아이디',
   `user_name` varchar(100) not null comment '유저이름',
