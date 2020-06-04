@@ -9,7 +9,7 @@ spring:
     url: jdbc:mysql://localhost:3306/user_zelda?serverTimezone=UTC&characterEncoding=UTF-8
     username: ENC(xatt/xbf5ohUTNnpnGxxiQ==)
     password: ENC(Hg6tzU1uYkC5KlUumpLVBigXYOkM9x00)
-    initialization-mode: never
+    initialization-mode: always
     sql-script-encoding: UTF-8
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect

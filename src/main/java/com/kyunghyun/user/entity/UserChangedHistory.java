@@ -1,6 +1,9 @@
 package com.kyunghyun.user.entity;
 
-import lombok.*;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.hibernate.annotations.ColumnDefault;
 import javax.persistence.*;
 import java.util.Date;
@@ -9,11 +12,11 @@ import java.util.Date;
 @Getter
 @ToString
 @Entity
-@Table(name = "user")
-public class User {
+@Table(name = "user_changed_history")
+public class UserChangedHistory {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="user_no", nullable = false)
     private Long userNo;
 
     @Column(name="user_id", nullable = false)
@@ -37,22 +40,22 @@ public class User {
     @Column(name="di")
     private String di;
 
-    @Column(name="date_created", columnDefinition = "datetime default CURRENT_TIMESTAMP", nullable = false, insertable=false, updatable=false)
+    @Column(name="date_created", nullable = false)
     private Date dateCreated;
 
     @Column(name="create_ip", nullable = false)
     private String createIp;
 
-    @Column(name="date_Updated", columnDefinition = "datetime default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP", nullable = false, insertable=false, updatable=false)
+    @Column(name="date_Updated", nullable = false)
     private Date dateUpdated;
 
     @Column(name="update_ip", nullable = false)
     private String updateIp;
 
-    @Column(name="date_password_changed", nullable = false, insertable=false)
+    @Column(name="date_password_changed", nullable = false)
     private Date datePasswordChanged;
 
-    @Column(name="use_yn", nullable = false, insertable=false)
+    @Column(name="use_yn", nullable = false)
     @ColumnDefault("Y")
     private String useYn;
 
