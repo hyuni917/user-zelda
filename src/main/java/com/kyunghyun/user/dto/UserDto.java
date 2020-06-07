@@ -14,7 +14,9 @@ import java.util.Date;
 public class UserDto {
     private Long userNo;
     private String userId;
+    @NonNull
     private String userName;
+    @NonNull
     @JsonIgnore
     private String password;
     private String cellphone;

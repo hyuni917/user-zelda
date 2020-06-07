@@ -6,10 +6,10 @@ spring:
     name: user-zelda
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/user_zelda?serverTimezone=UTC&characterEncoding=UTF-8
-    username: ENC(xatt/xbf5ohUTNnpnGxxiQ==)
-    password: ENC(Hg6tzU1uYkC5KlUumpLVBigXYOkM9x00)
-    initialization-mode: never
+    url: jdbc:mysql://192.168.0.110:3306/user_zelda?serverTimezone=UTC&characterEncoding=UTF-8
+    username: ENC(AjiJWKZHurkew60C2BerkA==)
+    password: ENC(Q2VtenGCRisNA4/KTB8mJw==)
+    initialization-mode: always
     sql-script-encoding: UTF-8
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
