@@ -6,6 +6,9 @@ import org.jasypt.encryption.pbe.config.SimpleStringPBEConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 프로퍼티 복호화
+ */
 @Configuration
 public class JasyptConfig {
 
