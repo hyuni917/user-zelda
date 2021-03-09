@@ -10,7 +10,4 @@ public class UserZeldaApplication {
         SpringApplication.run(UserZeldaApplication.class, args);
     }
 
-    //test1
-    //test222222
-    //test3333
 }
